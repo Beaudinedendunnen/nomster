@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import "feathericon";
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -60,3 +62,8 @@ body {
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+
+  .fe-smile-plus {
+    color: #FFFFFF;
+    font-size: 25px;
+  }
