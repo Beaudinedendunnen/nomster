@@ -42,7 +42,7 @@ gem 'will_paginate', '>3.0'
 
 gem 'simple_form'
 
-gem 'feathericon-rails'
+gem 'feathericon-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
