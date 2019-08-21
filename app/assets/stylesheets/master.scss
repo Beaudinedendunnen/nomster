@@ -19,9 +19,16 @@ h1, h2, h3, h4, h5, h5 {
   margin:0;
   padding:0;
 }
+body, html {
+  height: 100%;
+}
 
 body {
-  background: #3AAFA9;
+  background-image: image_url('background.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
