@@ -6,8 +6,8 @@
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 darken(#2B7A78, 15%);
-  background: #FEFFFF;
-  color: #17252A;
+  background-color: rgba(black, 0.5);
+  color: #FEFFFF;
   border: 1px solid #ccc;
   border-color: #2B7A78;
   margin-top: 10px;
@@ -45,8 +45,8 @@ body {
 }
 
 .apple_pagination {
-  background: #FEFFFF;
-  border: 1px solid #e5e5e5;
+  background: rgba(black, 0.5);
+  border: 1px solid #2B7A78;
   text-align: center;
   padding: 1em;
   cursor: default; }
@@ -68,7 +68,7 @@ body {
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: black; }
+    color: #FEFFFF; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
 
