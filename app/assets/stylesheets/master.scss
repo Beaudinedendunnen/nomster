@@ -11,11 +11,37 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.comments-box {
+  -moz-box-shadow: 1px 1px 2px 0 grey;
+  -webkit-box-shadow: 1px 1px 2px 0 grey;
+  box-shadow: 1px 1px 2px 0 grey;
+  background-color: rgba(black, 0.5);
+  color: grey;
+  border: 1px solid #ccc;
+  border-color: grey;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.index-photo {
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .index-quote {
 
   color: black;
+}
+
+.float-left {
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h5 {
@@ -138,4 +164,12 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+img {
+  display: inline-block;
 }
