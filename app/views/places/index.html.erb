@@ -9,21 +9,19 @@
     <div class="carousel-item active">
       <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Find the best restaurants</h3>
-        <p>To create your perfect night out</p>
+        <p>Create your perfect date night</p>
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Grab a quick coffee</h3>
-        <p>At the best coffeeshop in town</p>
+        <p>Grab a quick coffee</p>
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Rediscover your city</h3>
+        <p>Rediscover your city</p>
       </div>
     </div>
   </div>
@@ -36,12 +34,13 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<br />
+<br />
 
 <% @places.each do |place| %>
   <div class="container">
     <div class="row">
-      <div class="booyah-box col-10 offset-1">
+      <div class="booyah-box col-12">
         <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
         <p><%= place.description %></p><br />

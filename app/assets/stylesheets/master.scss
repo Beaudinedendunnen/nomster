@@ -1,11 +1,15 @@
 @import "feathericon";
 
+// @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Kreon|Pacifico&display=swap');
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 grey;
   -webkit-box-shadow: 1px 1px 2px 0 grey;
   box-shadow: 1px 1px 2px 0 grey;
-  background-color: rgba(black, 0.5);
-  color: #FEFFFF;
+  background-color: #E3E3E3;
+  color: #C60021;
   border: 1px solid #ccc;
   border-color: grey;
   margin-top: 10px;
@@ -19,7 +23,7 @@
   -moz-box-shadow: 1px 1px 2px 0 grey;
   -webkit-box-shadow: 1px 1px 2px 0 grey;
   box-shadow: 1px 1px 2px 0 grey;
-  background-color: rgba(black, 0.5);
+  background-color: #F6F6F8;
   color: grey;
   border: 1px solid #ccc;
   border-color: grey;
@@ -41,7 +45,12 @@
 }
 
 .float-left {
-  color: white;
+  color: #C60021;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h5 {
@@ -53,38 +62,44 @@ body, html {
 }
 
 body {
-  background-image: image_url('background3.jpg');
+//  background-image: image_url('background3.jpg');
+background-color: #F6F6F8;
   height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: 'Kreon', serif;
 }
 
 a {
-  color: white;
+  color: #C60021;
 }
 
-.navbar {
-  // background-image: linear-gradient(#D2E39F, #43582D);
-  // box-shadow: 0px 1px 3px #2a2a2a;
-  // width: 10%;
+.navbar .navbar-inverse {
+  box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
 }
 
 
 
-.navbar-inverse .navbar-brand {
-  color: #17252A;
-  font-family: 'kaushan_scriptregular', cursive;
+//.navbar-inverse
+
+.navbar-brand {
+  //color: #17252A;
+  color: #C60021;
+  font-family: 'Pacifico', cursive;
   font-size:26px;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #17252A;
+//  color: #17252A;
+  color: #C60021;
+  font-family: 'Pacifico', cursive;
+  font-size:26px;
 }
 
 .apple_pagination {
-  background: rgba(black, 0.5);
+  background: #F6F6F8;
   border: 1px solid grey;
   text-align: center;
   padding: 1em;
@@ -172,4 +187,19 @@ blockquote p {
 
 img {
   display: inline-block;
+}
+
+.carousel-caption {
+  font-family: 'Kreon', serif;
+  font-weight: lighter;
+  font-size: 60px;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
