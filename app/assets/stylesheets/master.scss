@@ -2,56 +2,12 @@
 
 // @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Kreon|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Pacifico&display=swap');
 
-.booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 grey;
-  -webkit-box-shadow: 1px 1px 2px 0 grey;
-  box-shadow: 1px 1px 2px 0 grey;
-  background-color: #E3E3E3;
-  color: #C60021;
-  border: 1px solid #ccc;
-  border-color: grey;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-}
 
-.comments-box {
-  -moz-box-shadow: 1px 1px 2px 0 grey;
-  -webkit-box-shadow: 1px 1px 2px 0 grey;
-  box-shadow: 1px 1px 2px 0 grey;
-  background-color: #F6F6F8;
-  color: grey;
-  border: 1px solid #ccc;
-  border-color: grey;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-}
 
-.index-photo {
-  display: inline-block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.index-quote {
 
-  color: black;
-}
-
-.float-left {
-  color: #C60021;
-}
-
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  width: 100%;
-}
 
 h1, h2, h3, h4, h5, h5 {
   margin:0;
@@ -69,11 +25,11 @@ background-color: #F6F6F8;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Kreon', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
-  color: #C60021;
+  color: #091740;
 }
 
 .navbar .navbar-inverse {
@@ -99,33 +55,6 @@ a {
   font-size:26px;
 }
 
-.apple_pagination {
-  background: #F6F6F8;
-  border: 1px solid grey;
-  text-align: center;
-  padding: 1em;
-  cursor: default; }
-  .apple_pagination a, .apple_pagination span {
-    padding: 0.2em 0.3em; }
-  .apple_pagination .disabled {
-    color: #aaaaaa; }
-  .apple_pagination .current {
-    font-style: normal;
-    font-weight: bold;
-    background-color: #bebebe;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    line-height: 1.5;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
-    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
-  .apple_pagination a {
-    text-decoration: none;
-    color: #FEFFFF; }
-    .apple_pagination a:hover, .apple_pagination a:focus {
-      text-decoration: underline; }
 
   .fe-smile-plus {
     color: #17252A;
@@ -188,19 +117,4 @@ blockquote p {
 
 img {
   display: inline-block;
-}
-
-.carousel-caption {
-  font-family: 'Kreon', serif;
-  font-weight: lighter;
-  font-size: 60px;
-  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-.carousel {
-  box-shadow: 0px 3px 8px #2a2a2a;
 }

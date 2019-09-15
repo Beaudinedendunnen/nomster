@@ -7,19 +7,19 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
+      <%= image_tag 'slider1.jpg', class: '' %>
       <div class="carousel-caption d-none d-md-block">
         <p>Create your perfect date night</p>
       </div>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
+      <%= image_tag 'slider2.jpg', class: '' %>
       <div class="carousel-caption d-none d-md-block">
         <p>Grab a quick coffee</p>
       </div>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
+      <%= image_tag 'slider3.jpg', class: '' %>
       <div class="carousel-caption d-none d-md-block">
         <p>Rediscover your city</p>
       </div>
@@ -37,10 +37,12 @@
 <br />
 <br />
 
+<div class="container">
+  <div class="row">
 <% @places.each do |place| %>
-  <div class="container">
-    <div class="row">
-      <div class="booyah-box col-12">
+
+    <div class="col-4 padding-box">
+      <div class="index-place-list">
         <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
         <p><%= place.description %></p><br />
@@ -50,37 +52,37 @@
         <% end %>
 
         <% if place.comments.present? %>
-          <div class="container">
-            <div class="row">
-              <div class="index-quote col-12">
-                <blockquote>
-                  <% if place.comments.present? && place.comments.last.humanized_rating.present? %>
-                    <b><%= place.comments.last.humanized_rating %></b> -
-                  <% end %>
-                  <%= place.comments.last.message %>
-                </blockquote>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="index-quote col-12">
+              <blockquote>
+                <% if place.comments.present? && place.comments.last.humanized_rating.present? %>
+                  <b><%= place.comments.last.humanized_rating %></b> -
+                <% end %>
+                <%= place.comments.last.message %>
+                  </blockquote>
             </div>
           </div>
+        </div>
         <% end %>
 
-          <div class="container">
-            <div class="row">
-              <div class="index-photo">
-                <% if place.photos.present? %>
-                  <%= image_tag(place.photos.last.picture.resized.url) %>
-                  <% else %>
+        <div class="container">
+          <div class="row">
+            <div class="index-photo">
+              <% if place.photos.present? %>
+                <%= image_tag(place.photos.last.picture.resized.url) %>
+                <% else %>
                   No images present
                 <% end %>
-              </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
-  <hr />
-<% end %>
 
+<% end %>
+</div>
+<hr />
 
 
 <%= will_paginate @places, previous_label: h("<"), next_label: h(">"), class: "apple_pagination" %>

@@ -1,11 +1,9 @@
 
     <div class="container">
       <div class="row">
-        <div class="booyah-box col-12">
+        <div class="info-box col-12">
           <h1><%= @place.name %></h1>
-          <br/>
           <i><%= @place.address %></i>
-          <br/><br/>
             <p><%= @place.description %></p>
 
             <% if @place.latitude.present? && @place.longitude.present? %>
@@ -50,7 +48,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col comments-box">
+        <div class="col sub-box">
           <!-- Modal photo -->
           <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -77,7 +75,7 @@
 
           <div class="container">
             <div class="row">
-              <div class="col-10 offset-1">
+              <div class="col-12">
                 <h1 class="float-left">Photos</h1>
 
                 <!-- Button trigger modal photo -->
@@ -87,6 +85,7 @@
               </div>
             </div>
           </div>
+          <br />
           <% @place.photos.each do |photo| %>
             <div class="photo-container">
               <% if photo.caption.present? %>
@@ -103,7 +102,7 @@
             </div>
           <% end %>
         </div>
-        <div class="col comments-box">
+        <div class="col sub-box">
           <!-- Modal comment -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -130,7 +129,7 @@
 
           <div class="container">
             <div class="row">
-              <div class="col-10 offset-1">
+              <div class="col-12">
                 <h1 class="float-left">Comments</h1>
 
                 <!-- Button trigger modal comment -->
@@ -140,6 +139,7 @@
               </div>
             </div>
           </div>
+          <br />
 
           <% @place.comments.each do |comment| %>
 
