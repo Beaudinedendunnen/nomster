@@ -4,7 +4,7 @@
 <div class="container booyah-box">
   <div class="row">
     <div class="col-4">
-      <%= image_tag 'user.jpeg', class: "user_avatar_img" %>
+      <%= image_tag(image_path('user.jpeg'), class: "user_avatar_img") %>
     </div>
     <div class="user_info col-8">
       <h1><%= @user.email %></h1>
